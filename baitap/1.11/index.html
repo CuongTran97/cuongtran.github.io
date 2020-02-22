@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div style="color: brown; text-align: center; font-size: 40px;">Đăng nhập</div>
+    <table border="1" cellspacing="0" style="background-color: lightskyblue; border: violet; ;" align="center">
+        <tr>
+            <td>Mã người dùng</td>
+            <td><input id="id" type="text" name="account" size="30px"></td>
+        </tr>
+        <tr>
+            <td>Mật khẩu</td>
+            <td><input type="password" name="password" size="30px"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"> 
+               <button id="clickToShow">Đồng ý</button>
+               <div id="label"></div>
+            </td>
+        </tr>
+        <script>
+            document.getElementById("clickToShow").onclick=function(){
+                var idName=document.getElementById("id").value
+                var showLabel=document.getElementById("label");
+                var content=idName;
+                showLabel.innerText=content;
+            }
+        </script>
+        
+    </table>
+</body>
+</html

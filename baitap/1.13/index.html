@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center" style="color: darkblue;">Đăng ký du lịch</h1>
+    <table align="center" border="1" cellspacing="2"   style="border: rgb(255, 108, 255);  background:rgb(255, 126, 20); color: rgb(5, 1, 1);">
+        <tr>
+            <td>Họ và tên</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Điện thoại</td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td>Khách Việt Nam</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Chọn tour</td>
+            <td>
+                <select name="" id="">
+                    <optgroup>Miền Bắc
+                        <option value="">Hà Nội - Hạ Long - Sapa</option>
+                        <option value="">Hà Nội - Chùa Hương - Ninh Bình</option>
+                        <option value="">Hà Nội - Cát Bà - Tuán Châu</option>
+                    </optgroup>
+                    <optgroup>Miền Trung
+                        <option value="">Huế - Bạch Mã - Đầ Nẵng</option>
+                        <option value="">Nhà Trang - Đà Lạt </option>
+                        <option value="">Buôn Mê Thuột - Gia Lai - Kontum</option>
+                    </optgroup>
+                    <optgroup>Miền Nam
+                        <option value="">TP.HCM - Cần Thơ - Cà Mau</option>
+                        <option value="">TP.HCM - Mỹ Tho</option>
+                    </optgroup>Miền Nam
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Phương tiện</td>
+            <td>
+                <input name="btradio" type="radio" checked>Máy bay
+                <input name="btradio" type="radio">Xe ô tô
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <fieldset >
+                    <legend>Số lượng đoàn khách</legend>
+                    Người lớn <input type="text" size="2px"> Trẻ em <input type="text" size="2px">
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td>Ghi chú thêm</td>
+            <td>
+                <textarea name="" id="" style="width: 300px;font-family: 'Times New Roman', Times, serif;"></textarea>
+            </td>
+        <tr>
+            <td colspan="2" align="center">
+            <button id="button">Đồng ý</button>
+            <div id="label"></div>
+            </td>
+        </tr>
+        <script>
+            document.getElementById("button").onclick=function(){
+                var showLabel=document.getElementById("label");
+                showLabel.innerText="Chúc mừng bạn đã đăng ký thành công"
+            }
+        </script>
+    </table>
+</body>
+</html>

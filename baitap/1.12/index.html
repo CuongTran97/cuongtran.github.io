@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center" style="color: crimson;">Phiếu đăng ký chương trình khuyến mãi</h1>
+    <table border="1" cellspacing="2" style="border:rgb(2, 0, 0); background:rgb(213, 255, 213);color: rgb(255, 24, 82);" align="center">
+        <tr>
+            <td>Họ và tên</td>
+            <td>
+                <input type="text" name="fullname" size="30" >
+            </td>
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <td>
+                <input type="text" name="address" size="30">
+            </td>
+        </tr>
+        <tr>
+            <td>Điện thoại</td>
+            <td>
+                <input type="text " name="phonenumber" size="30">
+            </td>
+        </tr>
+        <tr>
+            <td>Phái</td>
+            <td>
+                <input type="radio" name="sex" value="Nam">Nam
+                <input type="radio" name="sex" value="Nữ">Nữ
+            </td>
+        </tr>
+        <tr>
+            <td>Nghề nghiệp</td>
+            <td>
+                <select name="job" id="job">
+                    <option value="">Bác sĩ</option>
+                    <option value="">Kỹ sư</option>
+                    <option value="">Giáo viên</option>
+                    <option value="">Khác</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Chọn sản phẩm tham gia</td>
+            <td>
+                <select name="product" id="" multiple size="4">
+                    <option value="" selected>Kem đánh răng</option>
+                    <option value="">Bột giặt</option>
+                    <option value="">Dầu xả</option>
+                    <option value="">Dầu gội</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Số người tham gia dự đoán</td>
+            <td>
+                <input type="text" size 30>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+            <input id="button" type="reset" name="" value="Đồng ý">
+            <div id="label" style="color: red;"></div>
+            </td>
+        </tr>
+        <script>
+            document.getElementById("button").onclick=function(){
+                var showLabel=document.getElementById("label");
+                showLabel.innerText="Chúc mừng bạn đăng ký thành công"
+
+            }
+        </script>
+    </table>
+</body>
+</html>
