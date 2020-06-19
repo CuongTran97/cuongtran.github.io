@@ -1,0 +1,54 @@
+
+body, ul, li {
+    padding: 0;
+    margin: 0;
+
+}
+
+header {
+    background-color: cyan;
+}
+
+nav {
+    background-color: yellowgreen;
+
+}
+
+section {
+    background-color: green;
+}
+
+section aside .heading {
+    margin: 0px;
+}
+
+aside {
+    background-color: orange;
+}
+
+article {
+    background-color: red;
+}
+
+footer {
+    background-color: sandybrown;
+}
+
+/* Layout */
+/* float */
+/* aside {
+    width: 20%;
+    float: left;
+}
+
+article {
+    width: 70%;
+    float: right;
+}
+
+footer {
+    content: "";
+    clear: both;
+} */
+
+/* grid layout */

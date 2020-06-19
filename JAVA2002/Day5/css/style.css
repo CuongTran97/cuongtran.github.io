@@ -1,0 +1,25 @@
+/*p {
+    color: red;
+    
+}*/
+
+#para-2 {
+
+    color: yellow;
+}
+
+.red-color {
+    color: purple;
+}
+
+.parent p {
+    color: pink;
+}
+
+a:active {
+    color: red;
+}
+.parent p:first-child {
+
+    color: green;
+}

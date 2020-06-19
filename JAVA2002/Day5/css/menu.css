@@ -1,0 +1,64 @@
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+ul, li, body{
+    padding: 0;
+    margin: 0;
+}
+.menu .list-item .item {
+    display: inline-block;
+    padding: 8px;
+}
+
+.menu .list-item .item a:link,a:visited{
+    color: rgb(255,255,255);
+    text-decoration: none;
+ }
+.menu .list-item .item a:hover{
+    color: black;
+    background-color: rgb(255, 214, 221);
+}
+.menu .list-item .item:hover{
+    background-color: rgb(255, 214, 221);
+}
+.menu {
+    background-color: rgb(50,48,49);
+    
+}
+
+.menu .list-item .item a:active{
+    color:red;
+}
+.menu .list-item {
+    text-align: center;
+}
+.menu .list-item .item a{
+   text-transform: uppercase; 
+   
+}
+
+.menu .list-item .item {
+     position: relative; 
+}
+.menu .list-item .item .sub-menu {
+    position: absolute;
+    background-color: plum;
+    top: 38px;
+    left: 0px;
+    display: none;
+}
+.menu .list-item .item .sub-menu ul li {
+    list-style-type: none;
+    text-align: start;
+    
+}
+
+.menu .list-item .item:hover .sub-menu {
+    display: block;
+}
+/* .menu .list-item .item .sub-menu ul li a:hover{
+    display: grid;
+} */
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+</head>
+<body>
+    <!-- paragragh, heading-->
+    <p>this is a paragragh</p>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h6>h6</h6>
+    <h4><b><i><h4>h4</h4></i></b></h4>
+    <em>this is em</em>
+    <strong><mark>this is strong tag</mark> </strong>
+    <!-- Data list,table-->
+    <ul style="list-style-type: square;">
+        <li>item 1</li>
+        <li>item 2</li>
+
+    </ul>
+    <ol type="A">
+        <li>itemA</li>
+        <li>item B</li>
+        <li>item C</li>
+    </ol>
+    <h2>Chuong trinh hoc - lap trinh</h2>
+
+    <table>
+        <tr >
+            <th rowspan="2">nhom hoc phan</td>
+            <th rowspan="2"> mon hoc</td>
+            <th colspan="2">So tiet</td>
+            <!--<td></td>-->
+        </tr>
+        <tr >
+            <th>Ly thuyet</td>
+            <th>thuc hanh</td>
+        </tr>
+        <tr>
+            <td rowspan="2">tin hoc van phong</td>
+            <td>he dieu hanh</td>
+            <td>3</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Su dung Internet</td>
+            <td>3</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td colspan="4"><a href="http://facebook.com/">facebook</a></td>
+        </tr>
+    </table>
+    <br><br>
+    <!-- html form-->
+
+    <form action="server.js" method="POST|GET">
+        <fieldset>
+            <legend>Login form</legend>
+            <label for="username">User name</label>
+            <input type="text" name="username" id="username">
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <br><br>
+            <input type="checkbox" id="remember">
+            <label for="remember">Nho phien dang nhap</label>
+            <br><br>
+            <label for="male">Nam</label>
+            <input type="radio" id="male" name="sex">
+            <label for="female">Nu</label>
+            <input type="radio" id="female" name="sex">
+            <select name="students" id="students" >
+                <optgroup label="Nam">
+                    <option value="id1">Cuong</option>
+                    <option value="id2">Tai</option>
+                </optgroup>
+                <optgroup label="Nu">
+                    <option value="id3">Minh</option>
+                </optgroup>
+                
+            </select> <br><br>
+            <label for="date-of-birth">Ngay sinh</label>
+            <input type="date" id="date-of-birth">
+            <br>
+            <label for="height">Chieu cao</label>
+            <input type="number"  id="height" min="0" max="2">
+            <br><br>
+            <input type="submit" value="Xac nhan" onclick="onSubmit()">
+            <p id="show-confirm" style="display: none;"> ban da dang nhap thanh cong</p>
+            <input type="color">   
+            <br><br>
+            
+        </fieldset>
+        <script>
+            function onSubmit(){
+                event.preventDefault();
+               // alert('hello class')
+               document.getElementById("show-confirm").style.display="block";
+            }
+        </script>
+    </form>
+
+    <!--html layout-->
+    <header>
+        <h2>This is Header</Header></h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">HomePage</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <article>
+        <aside>
+            this is aside
+        </aside>
+        <section>
+            <h3>This is heading of section</h3>
+            <p>Lorema aasd ddsdjs cssit s scsasak</p>
+        </section>
+    </article>
+    <footer>
+        This is footer
+    </footer>
+
+    <!-- Html media-->
+    <audio src=""></audio>
+
+    <!-- html canvas -->
+    <br><br><br><br><br>
+</body>
+</html>
