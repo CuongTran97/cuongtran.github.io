@@ -1,14 +1,13 @@
-var a = [1,2,3,4,5,6,7,8,9,9,8,7,6,5,4,3,2,1];
+var a = [5,2,4,19,8,12,4,2,5,6,8,10];
 var min = a[0];
 var max = a[0];
-var sum = 0
-for(var i = 0; i<a.length ; i++){
-    if(a[i]<min){
-        min = min[i];
-    }else if(a[i]>max){
-        max = a[i];
+for(var i = 1; i<a.length ; i++){
+    if(min>a[i]){
+        min = a[i]
     }
-    sum+= a[i];
+    if(max<a[i]){
+        max = a[i]
+    }
+
 }
-var sx = (min+ max) /2;
 console.log(max,min,sx); 
